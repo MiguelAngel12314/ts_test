@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>CSV Upload</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-primary" data-bs-theme="light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1 text-wrap text-bg-primary">Upload CSV</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid mt-2">
+
+        <!-- Container -->
+        <div class="container">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary btn-lg">
+                    <label for="upload-file" class="cursor-pointer">
+                        <i class="bi bi-file-earmark-arrow-up"></i>
+                    </label>
+                    <input id="upload-file" type="file" accept=".csv" style="display: none;">
+                </button>
+            </div>
+
+            <!-- Dynamic Table -->
+            <table class="table">
+
+                <!-- Dinamyc table headers -->
+                <thead>
+                    <tr id="header-table">
+                    </tr>
+                </thead>
+
+                <!-- Dinamyc table rows -->
+                <tbody id="data-table">
+                </tbody>
+            </table>
+            <div class="text-center">
+                <!-- Spinner -->
+                <div id="loading" class="spinner-border" role="status"
+                    style="width: 3rem; height: 3rem; display: none;">
+                </div>
+
+                <!-- Massage error typeOf Alert -->
+                <div class="alert alert-danger" role="alert" id="alertError" style="display: none;"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+    <script type="module">
+        import { App } from './src/app.ts';
+        const app = new App();
+        window.app = app;
+    </script>
+</body>
+
+</html>
