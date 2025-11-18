@@ -3,8 +3,8 @@
 Descripción
 - This program permit upload CSV File and show in a table
 
-Requisitos
-- Node.js (v20+ recomendado)
+Requirements
+- Node.js (v20+ recommended)
 - npm
 
 Installation
