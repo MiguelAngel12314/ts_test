@@ -56,4 +56,4 @@ Basic Structure
 
 
 DEMO
-- Download video demostration [https://github.com/MiguelAngel12314/ts_test/blob/main/demo/DEMO.mov]("Video demo").
+- Download video demostration [Video Demo](https://github.com/MiguelAngel12314/ts_test/blob/main/demo/DEMO.mov).
