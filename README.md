@@ -4,13 +4,13 @@ Descripción
 - This program permit upload CSV File and show in a table
 
 Requisitos
-- Node.js (v14+ recomendado)
+- Node.js (v20+ recomendado)
 - npm
 
 Installation
 1. Clone Repository.
 ```
-git clone repository
+git clone https://github.com/MiguelAngel12314/ts_test.git
 ```
 2. Open repository 
 ```
@@ -23,7 +23,7 @@ npm install
 
 Run project
 
-- Iniciar la aplicación (si existe script):
+- Start application:
 ```
 npm start
 ```
@@ -54,4 +54,7 @@ Basic Structure
 - src/ — source code
 - package.json — cointain all dependencies to the project
 - snowpack - Its a dependency for development without compile in frontEnd
+
+
+DEMO
 
