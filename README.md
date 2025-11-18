@@ -39,7 +39,6 @@ ts_test
 │ ├── /utils
 | |   └── /alerts
 | |   └── /csv
-│ └── csv
 │ └── app.ts
 ├── index.html
 ├── package.json
@@ -57,4 +56,4 @@ Basic Structure
 
 
 DEMO
-
+- Download video demostration [https://github.com/MiguelAngel12314/ts_test/blob/main/demo/DEMO.mov]("Video demo").
