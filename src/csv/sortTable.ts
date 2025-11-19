@@ -17,9 +17,9 @@ export class SortTable {
 
         if (!this.dataTable || this.dataTable.length === 0) return;
 
-        const comparator = (a: string[], b: string[]) => {
-            const va = (a[idx] ?? '').toString();
-            const vb = (b[idx] ?? '').toString();
+        const comparator = (newValue: string[], oldValue: string[]) => {
+            const va = (newValue[idx] ?? '').toString();
+            const vb = (oldValue[idx] ?? '').toString();
 
             const na = parseFloat(va.replace(',', '.'));
             const nb = parseFloat(vb.replace(',', '.'));
