@@ -6,6 +6,7 @@ Descripción
 Requirements
 - Node.js (v20+ recommended)
 - npm
+- jest
 
 Installation
 1. Clone Repository.
@@ -28,6 +29,17 @@ Run project
 npm start
 ```
 
+Run tests
+
+- Run all test:
+```
+npm run test
+```
+- Run test file:
+```
+npm run test <nameFile>.test
+```
+
 Dependecy Tree
 
 ```
@@ -41,6 +53,8 @@ ts_test
 | |   └── /csv
 │ └── app.ts
 ├── index.html
+├── babel.config.js
+├── jest.config.js
 ├── package.json
 ├── snowpack.config.js
 ├── tsconfig.json
