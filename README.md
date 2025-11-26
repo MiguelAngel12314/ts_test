@@ -17,7 +17,11 @@ git clone https://github.com/MiguelAngel12314/ts_test.git
 ```
 cd ts_test
 ```
-3. Install dependencies 
+3. switch branch
+```
+git checkout vite
+```
+4. Install dependencies 
 ```
 npm install
 ```
@@ -26,7 +30,7 @@ Run project
 
 - Start application:
 ```
-npm start
+npm run dev
 ```
 
 Run tests
@@ -56,7 +60,6 @@ ts_test
 ├── babel.config.js
 ├── jest.config.js
 ├── package.json
-├── snowpack.config.js
 ├── tsconfig.json
 ```
 
@@ -66,7 +69,6 @@ Basic Structure
 - package-lock.json — dependencies block (excluded for .gitignore)
 - src/ — source code
 - package.json — cointain all dependencies to the project
-- snowpack - Its a dependency for development without compile in frontEnd
 
 
 DEMO
