@@ -17,9 +17,11 @@ module.exports = {
     /* ... */
   },
   devOptions: {
+    preventAssignment: true
     /* ... */
   },
   buildOptions: {
+    preventAssignment: true
     /* ... */
   },
 };
