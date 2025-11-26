@@ -3,6 +3,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "commonjs",
+    "useDefineForClassFields": true,
     "baseUrl": "./src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,7 +17,7 @@
     "types": [
       "bootstrap",
       "jest",
-      "sinon"
+      "vite/client"
     ],
     "paths": {
       "@bootstrap/*": [
@@ -24,6 +25,17 @@
       ],
     }
   },
+  "moduleResolution": "bundler",
+  "allowImportingTsExtensions": true,
+  "verbatimModuleSyntax": true,
+  "moduleDetection": "force",
+  "noEmit": true,
+  "strict": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+  "erasableSyntaxOnly": true,
+  "noFallthroughCasesInSwitch": true,
+  "noUncheckedSideEffectImports": true,
   "include": [
     "src"
   ]
